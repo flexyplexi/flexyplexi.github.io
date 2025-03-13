@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="DJoz Template">
+    <meta name="keywords" content="DJoz, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Order</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/barfiller.css" type="text/css">
+    <link rel="stylesheet" href="css/nowfont.css" type="text/css">
+    <link rel="stylesheet" href="css/rockville.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <link rel="icon" type="image/png" href="img/logo.png">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header header--normal">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-2">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/logo.png" width="80px" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-md-10">
+                    <div class="header__nav">
+                        <nav class="header__menu mobile-menu">
+                            <ul>
+                                <li><a href="./index.html" style="border-bottom: none;">Home</a></li>
+                                <li><a href="./about.html">About</a></li>
+                                <!-- <li><a href="./discography.html">Discography</a></li> -->
+                                <!-- <li><a href="./tours.html">Tours</a></li> -->
+                                <li class="active"><a href="./videos.html">Guide</a></li>
+                                <!-- <li><a href="#">Pages</a> -->
+                                    <!-- <ul class="dropdown"> 
+                                        <li><a href="./about.html">About</a></li>
+                                        <li><a href="./blog.html">Blog</a></li>
+                                        <li><a href="./blog-details.html">Blog Details</a></li>
+                                    </ul>
+                                </li>-->
+                                <li><a href="./contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header__right__social" >
+                            <a href="https://www.facebook.com/FLEXY.PLEXI" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-tiktok" target="_blank"></i></a>
+                            <a href="https://www.instagram.com/flexyplexi/" target="_blank"><i class="fa-brands fa-instagram"></i></a>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Breadcrumb Begin -->
+    <!-- <div class="breadcrumb-option">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb__links">
+                        <a href="#"><i class="fa fa-home"></i> Home</a>
+                        <span>Guide</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    
+
+    <div class="container mt-2" style="padding-right: 50px; padding-left: 50px; min-height: 100vh;">
+        <!-- View Guide Button -->
+
+
+        <!-- Product Details Section -->
+        <div id="product-details">
+            <div class="text-end mb-3">
+                <button type="button" class="btn btn-info" id="viewGuideButton">View Guide</button>
+            </div>
+            <h1 class="text-center" id="productTitle" style="color: rgb(212, 78, 0); font-weight: 800; text-shadow: 0 0 5px rgba(255, 112, 30, 0.8), 0 0 10px rgba(255, 112, 30, 0.8), 0 0 20px rgba(255, 112, 30, 0.6), 0 0 40px rgba(255, 112, 30, 0.4);">Product Title</h1>
+            <div class="text-center" style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+                 <!-- Main Image Display -->
+    <img id="mainImage" src="" alt="Main Product Image" style="width: 300px; height: 300px; border-radius: 10px;">
+
+    <!-- Thumbnail Slider -->
+    <div style="display: flex; gap: 10px;">
+        <img class="thumbnail" src="img/new1.jpg" alt="Thumbnail 1" style="width: 80px; height: 80px; border-radius: 10px; cursor: pointer;">
+        <img class="thumbnail" src="img/new2.jpg" alt="Thumbnail 2" style="width: 80px; height: 80px; border-radius: 10px; cursor: pointer;">
+        <img class="thumbnail" src="" alt="Thumbnail 3" style="width: 80px; height: 80px; border-radius: 10px; cursor: pointer;">
+    </div>
+</div>
+            <p class="text-center mt-3" id="productDescription" style="font-weight: 600;"></p>
+            <form>
+                <div class="mb-3">
+                    <label for="songName" class="form-label" style="color: rgb(255, 150, 22); font-weight: 800;">Song Name</label>
+                    <input type="text" class="form-control" id="songName" placeholder="Enter song name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="artistName" class="form-label" style="color: rgb(255, 150, 22); font-weight: 800;">Artist Name</label>
+                    <input type="text" class="form-control" id="artistName" placeholder="Enter artist name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="quantity" class="form-label" style="color: rgb(255, 150, 22); font-weight: 800;">Quantity</label>
+                    <div class="input-group" style="width: 250px;">
+                        <button type="button" class="btn btn-outline-secondary" id="decrement">-</button>
+                        <input type="text" class="form-control text-center" id="quantity" value="1">
+                        <button type="button" class="btn btn-outline-secondary" id="increment">+</button>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="imageUpload" class="form-label" style="color: rgb(255, 150, 22); font-weight: 800;">Upload Custom Picture (Optional)</label>
+                    <input type="file" class="form-control" id="imageUpload" accept="image/*">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" style="color: rgb(255, 150, 22); font-weight: 800;">Text Color</label>
+                    <div class="d-flex gap-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="color" id="colorWhite" value="white">
+                            <label class="form-check-label" for="colorWhite">White</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="color" id="colorBlack" value="black">
+                            <label class="form-check-label" for="colorBlack">Black</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="text1" class="form-label" style="color: rgb(255, 150, 22); font-weight: 800;">Text 1 or Date 1 (Optional)</label>
+                    <input type="text" class="form-control" id="text1" placeholder="Enter text or date">
+                </div>
+                <div class="mb-3">
+                    <label for="text2" class="form-label" style="color: rgb(255, 150, 22); font-weight: 800;">Text 2 or Date 2 (Optional)</label>
+                    <input type="text" class="form-control" id="text2" placeholder="Enter text or date">
+                </div>
+                <!-- Text on Wood Base (Only for P2) -->
+                <div class="mb-3 d-none" id="woodBaseSection">
+                    <label for="woodText" class="form-label" style="color: rgb(255, 150, 22); font-weight: 800;">Text on Wood Base (Optional)</label>
+                    <input type="text" class="form-control" id="woodText" placeholder="Enter text for wood base">
+                </div>
+                <button type="button" class="btn btn-primary w-100" id="nextButton" style="margin-bottom: 50px;">Next</button>
+            </form>
+        </div>
+
+        <!-- Customer Details Section (Initially Hidden) -->
+        <div id="customer-details" class="d-none">
+            <h1 class="text-center"  style="color: rgb(212, 78, 0); font-weight: 800; text-shadow: 0 0 5px rgba(255, 112, 30, 0.8), 0 0 10px rgba(255, 112, 30, 0.8), 0 0 20px rgba(255, 112, 30, 0.6), 0 0 40px rgba(255, 112, 30, 0.4);">Customer details</h1>
+            <!-- Delivery Option -->
+            <div class="mb-3">
+                <label for="deliveryOption" class="form-label" style="color: rgb(255, 150, 22); font-weight: 800;">Delivery Option</label>
+                <select class="form-select" id="deliveryOption" required>
+                    <option value="" disabled selected>Select delivery option</option>
+                    <option value="pickup">Pickup Point (La Goulette)</option>
+                    <option value="home_delivery">Home Delivery (+7DT)</option>
+                </select>
+            </div>
+            <form>
+                <div class="mb-3">
+                    <label for="fullName" class="form-label" style="color: rgb(255, 150, 22); font-weight: 800;">Full Name</label>
+                    <input required type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="phone1" class="form-label" style="color: rgb(255, 150, 22); font-weight: 800;">Phone Number 1</label>
+                    <input type="tel" class="form-control" id="phone1" placeholder="Enter phone number 1" required>
+                </div>
+                <div class="mb-3">
+                    <label for="phone2" class="form-label" style="color: rgb(255, 150, 22); font-weight: 800;">Phone Number 2 (Optional)</label>
+                    <input type="tel" class="form-control" id="phone2" placeholder="Enter phone number 2">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label" style="color: rgb(255, 150, 22); font-weight: 800;">Email Address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="shippingAddress" class="form-label" style="color: rgb(255, 150, 22); font-weight: 800;">Shipping Address</label>
+                    <textarea class="form-control" id="shippingAddress" placeholder="Enter shipping address" required></textarea>
+                </div>
+                <button type="button" class="btn btn-secondary w-100" id="backButton">Back</button>
+                <button type="button" class="btn btn-success w-100 mt-3" id="submitButton" style="margin-bottom: 30px;">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- SweetAlert2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <!-- Custom JS -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            displayGuide();
+            const quantityInput = document.getElementById('quantity');
+            const incrementButton = document.getElementById('increment');
+            const decrementButton = document.getElementById('decrement');
+            const nextButton = document.getElementById('nextButton');
+            const backButton = document.getElementById('backButton');
+            const productDetails = document.getElementById('product-details');
+            const customerDetails = document.getElementById('customer-details');
+            const viewGuideButton = document.getElementById('viewGuideButton');
+            const woodBaseSection = document.getElementById('woodBaseSection');
+            const submitButton = document.getElementById('submitButton');
+
+            // Thumbnail Click Event
+            const thumbnails = document.querySelectorAll('.thumbnail');
+            const mainImage = document.getElementById('mainImage');
+
+            thumbnails.forEach(thumbnail => {
+                thumbnail.addEventListener('click', () => {
+                    mainImage.src = thumbnail.src; // Update main image with clicked thumbnail
+                });
+            });
+
+            // Hide/Show Shipping Address based on Delivery Option
+            document.getElementById('deliveryOption').addEventListener('change', function () {
+                const shippingAddressField = document.getElementById('shippingAddress');
+                if (this.value === 'pickup') {
+                    shippingAddressField.closest('.mb-3').classList.add('d-none'); // Hide shipping address
+                } else {
+                    shippingAddressField.closest('.mb-3').classList.remove('d-none'); // Show shipping address
+                }
+            });
+
+            // Quantity Increment/Decrement
+            incrementButton.addEventListener('click', () => {
+                quantityInput.value = parseInt(quantityInput.value) + 1;
+            });
+
+            decrementButton.addEventListener('click', () => {
+                if (quantityInput.value > 1) {
+                    quantityInput.value = parseInt(quantityInput.value) - 1;
+                }
+            });
+
+            // Next Button Click
+            nextButton.addEventListener('click', () => {
+                // Get all obligatory fields
+                const songName = document.getElementById('songName').value.trim();
+                const artistName = document.getElementById('artistName').value.trim();
+                const quantity = document.getElementById('quantity').value.trim();
+                const textColor = document.querySelector('input[name="color"]:checked'); // Check if a text color is selected
+
+                // Array to store missing field names
+                const missingFields = [];
+
+                // Check if each obligatory field is empty
+                if (!songName) missingFields.push('Song Name');
+                if (!artistName) missingFields.push('Artist Name');
+                if (!quantity) missingFields.push('Quantity');
+                if (!textColor) missingFields.push('Text Color'); // Add Text Color to the list if not selected
+
+                // If there are missing fields, show SweetAlert popup
+                if (missingFields.length > 0) {
+                    // Create a message listing the missing fields
+                    const message = `Please fill the following fields: ${missingFields.join(', ')}.`;
+
+                    // Show SweetAlert popup
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: message,
+                        confirmButtonColor: '#3085d6',
+                        confirmButtonText: 'OK'
+                    });
+                } else {
+                    // If all obligatory fields are filled, proceed to the next step
+                    productDetails.classList.add('d-none'); // Hide product details
+                    customerDetails.classList.remove('d-none'); // Show customer details
+                    window.scrollTo({
+                        top: 0, // Scroll to the top of the page
+                        behavior: 'smooth' // Optional: Adds smooth scrolling animation
+                    });
+                }
+            });
+
+            // Back Button Click
+            backButton.addEventListener('click', () => {
+                customerDetails.classList.add('d-none'); // Hide customer details
+                productDetails.classList.remove('d-none'); // Show product details
+            });
+
+            function displayGuide() {
+                Swal.fire({
+                    confirmButtonText: 'Got it!',
+                    imageUrl: 'img/explain.png', // Path to your local image
+                });
+            }
+
+            // SweetAlert Popup for View Guide
+            viewGuideButton.addEventListener('click', displayGuide);
+
+            // Extract product ID from URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const productId = urlParams.get('id');
+
+            // Fetch product details based on ID
+            if (productId) {
+                fetchProductDetails(productId);
+            } else {
+                alert('No product ID found in the URL.');
+            }
+
+            // Function to fetch product details
+            function fetchProductDetails(productId) {
+                // Mock data for demonstration
+                const products = {
+                    '1': {
+                        title: 'A5 Plexiglass with Spotify Code',
+                        image: 'img/events/event-1.jpg',
+                        thumbnail1: 'img/th1.png', // Thumbnail 1 for P1
+                        thumbnail2: 'img/event-1.png', // Thumbnail 2 for P1
+                        description: 'Material : High-quality 3mm thick plexiglass <br> Size : A5 dimensions (14.8 x 21 cm) <br> Design : Personalized with Spotify code <br>Text : Text available in white or black'
+                    },
+                    '2': {
+                        title: 'A5 Plexiglass with Wooden Base',
+                        image: 'img/events/event-2.jpg',
+                        thumbnail1: 'img/socle.jpg', // Thumbnail 1 for P2
+                        thumbnail2: 'img/thumbnail2.jpg', // Thumbnail 2 for P2
+                        description: 'Material : High-quality 3mm thick plexiglass <br> Size : A5 dimensions (14.8 x 21 cm) <br> Base : Solid wooden base that can be engraved with a personal message or design <br>Text : Text available in white or black'
+                    },
+                    '3': {
+                        title: 'A5 Plexiglass with Metal Spacers',
+                        image: 'img/events/event-3.jpg',
+                        thumbnail1: 'img/metalspacer.jpg', // Thumbnail 1 for P3
+                        thumbnail2: 'img/thumbnail3.jpg', // Thumbnail 2 for P3
+                        description: 'Material : High-quality 3mm thick plexiglass <br> Size : A5 dimensions (14.8 x 21 cm) <br> Mounting : Includes metal spacers to attach on the wall <br>Text : Text available in white or black'
+                    }
+                };
+
+                const product = products[productId];
+                if (product) {
+                    document.getElementById('productTitle').textContent = product.title;
+                    document.getElementById('mainImage').src = product.image; // Set main image
+                    document.getElementById('productDescription').innerHTML = product.description;
+
+                    // Set thumbnails dynamically
+                    const thumbnails = document.querySelectorAll('.thumbnail');
+                    thumbnails[0].src = product.thumbnail1; // Set thumbnail 1
+                    thumbnails[1].src = product.thumbnail2; // Set thumbnail 2
+                    thumbnails[2].src = product.image; // Set thumbnail 3 (main image)
+
+                    // Show/hide wood base text field based on product
+                    if (productId === '2') {
+                        woodBaseSection.classList.remove('d-none'); // Show for P2
+                    } else {
+                        woodBaseSection.classList.add('d-none'); // Hide for others
+                    }
+                } else {
+                    alert('Product not found.');
+                    window.location.href = "index.html"; // Redirect to home if product not found
+                }
+            }
+
+            submitButton.addEventListener('click', () => {
+                // Array to store missing field names
+                const missingFields = [];
+
+                // Function to check if a field is empty and add its label to the missingFields array
+                const checkField = (inputId, labelText) => {
+                    const input = document.getElementById(inputId).value.trim();
+                    if (!input) missingFields.push(labelText);
+                };
+
+                // Check each obligatory field
+                checkField('fullName', 'Full Name');
+                checkField('phone1', 'Phone Number 1');
+                checkField('email', 'Email Address');
+                checkField('deliveryOption', 'Delivery Option'); // Add Delivery Option validation
+
+                // If there are missing fields, show SweetAlert popup
+                if (missingFields.length > 0) {
+                    const message = `Please fill the following fields: ${missingFields.join(', ')}.`;
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: message,
+                        confirmButtonColor: '#3085d6',
+                        confirmButtonText: 'OK'
+                    });
+                } else {
+                    document.getElementById('submitButton').disabled = true;
+                    document.getElementById('submitButton').textContent = 'Processing...';
+                    document.getElementById('backButton').disabled = true;
+                    submitData();
+                }
+            });
+
+            function submitData() {
+                // Create and show loader
+                let loader = document.createElement("div");
+                loader.id = "loader";
+                loader.innerText = "Loading...";
+                loader.style.position = "fixed";
+                loader.style.top = "0";
+                loader.style.left = "0";
+                loader.style.width = "100%";
+                loader.style.height = "100%";
+                loader.style.display = "flex";  // Use flexbox to center content
+                loader.style.alignItems = "center";  // Centers vertically
+                loader.style.justifyContent = "center";  // Centers horizontally
+                loader.style.textAlign = "center";  // Centers the text horizontally (just in case)
+                loader.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
+                loader.style.color = "white";
+                loader.style.fontSize = "20px";
+                loader.style.fontWeight = "bold";
+                loader.style.borderRadius = "5px";
+                loader.style.zIndex = "9999";
+                document.body.appendChild(loader);
+
+                // Form fields
+                let songName = document.getElementById("songName").value;
+                let artistName = document.getElementById("artistName").value;
+                let quantity = document.getElementById("quantity").value;
+                let text1 = document.getElementById("text1")?.value || "";
+                let text2 = document.getElementById("text2")?.value || "";
+                let woodText = document.getElementById("woodText")?.value || "";
+                let selectedColor = document.querySelector('input[name="color"]:checked') ? document.querySelector('input[name="color"]:checked').value : "";
+                let deliveryOption = document.getElementById("deliveryOption").value; // Add delivery option
+
+                // Customer details
+                let fullName = document.getElementById("fullName").value;
+                let phone1 = document.getElementById("phone1").value;
+                let phone2 = document.getElementById("phone2")?.value || "";
+                let email = document.getElementById("email").value;
+                let shippingAddress = document.getElementById("shippingAddress").value;
+
+                const urlParams = new URLSearchParams(window.location.search);
+                let id = urlParams.get('id');
+                let fileInput = document.getElementById("imageUpload");
+                if (fileInput.files.length === 0) {
+                    let data = {
+                        productId: id,
+                        hasimage: "no",
+                        songName: songName,
+                        artistName: artistName,
+                        quantity: quantity,
+                        color: selectedColor,
+                        text1: text1,
+                        text2: text2,
+                        woodText: woodText,
+                        deliveryOption: deliveryOption, // Add delivery option
+                        fullName: fullName,
+                        phone1: phone1,
+                        phone2: phone2,
+                        email: email,
+                        shippingAddress: shippingAddress
+                    };
+                    fetch("https://script.google.com/macros/s/AKfycbxPUOTmEuDNk3oY3MMVzbFsTvFWVcwu4tIDjz1A73SnXGU5w48KJw4Sj4rcf2Ukp5m3/exec", {
+                        method: "POST",
+                        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                        body: new URLSearchParams(data)
+                    })
+                    .then(response => response.json())
+                    .then(result => {
+                        document.body.removeChild(loader); // Remove loader
+
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Success!',
+                            text: 'Your order has been submitted successfully!',
+                            confirmButtonColor: '#3085d6',
+                            confirmButtonText: 'OK'
+                        }).then(() => {
+                            window.location.replace("index.html");
+                        });
+                    })
+                    .catch(error => {
+                        console.error("Error:", error);
+                        document.body.removeChild(loader); // Remove loader on error
+                    });
+                } else {
+                    let file = fileInput.files[0];
+                    let reader = new FileReader();
+                    reader.readAsDataURL(file);
+                    reader.onload = function () {
+                        let base64 = reader.result.split(",")[1];
+                        let data = {
+                            productId: id,
+                            hasimage: "yes",
+                            songName: songName,
+                            artistName: artistName,
+                            quantity: quantity,
+                            color: selectedColor,
+                            text1: text1,
+                            text2: text2,
+                            woodText: woodText,
+                            deliveryOption: deliveryOption, // Add delivery option
+                            fullName: fullName,
+                            phone1: phone1,
+                            phone2: phone2,
+                            email: email,
+                            shippingAddress: shippingAddress,
+                            image: base64,
+                            mimeType: file.type,
+                            fileName: file.name
+                        };
+
+                        fetch("https://script.google.com/macros/s/AKfycbxPUOTmEuDNk3oY3MMVzbFsTvFWVcwu4tIDjz1A73SnXGU5w48KJw4Sj4rcf2Ukp5m3/exec", {
+                            method: "POST",
+                            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                            body: new URLSearchParams(data)
+                        })
+                        .then(response => response.json())
+                        .then(result => {
+                            document.body.removeChild(loader); // Remove loader
+
+                            Swal.fire({
+                                icon: 'success',
+                                title: 'Success!',
+                                text: 'Your order has been submitted successfully!',
+                                confirmButtonColor: '#3085d6',
+                                confirmButtonText: 'OK'
+                            }).then(() => {
+                                window.location.replace("index.html");
+                            });
+                        })
+                        .catch(error => {
+                            console.error("Error:", error);
+                            document.body.removeChild(loader); // Remove loader on error
+                        });
+                    };
+                }
+            }
+        });
+    </script>
+    <footer style="margin-top: -10px;background-color: #f44336;padding-top: 50px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer__address">
+                        <ul>
+                            <li>
+                                <i class="fa fa-phone"></i>
+                                <p>Phone</p>
+                                <h6>+216 50-662-461</h6>
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope"></i>
+                                <p>Email</p>
+                                <h6>Flexyplexi@gmail.com</h6>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 offset-lg-1 col-md-6">
+                    <div class="footer__social">
+                        <h2>Flexy Plexi</h2>
+                        <div class="footer__social__links">
+                            <a href="https://www.facebook.com/FLEXY.PLEXI" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-tiktok" target="_blank"></i></a>
+                            <a href="https://www.instagram.com/flexyplexi/" target="_blank"><i class="fa-brands fa-instagram"></i></a>   
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 offset-lg-1 col-md-6">
+                    <div class="footer__newslatter">
+                        <h4>Stay With Us</h4>
+                        <form action="#">
+                            <input type="text" placeholder="Email">
+                            <button type="submit"><i class="fa fa-send-o"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/jquery.barfiller.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Music Plugin -->
+    <script src="js/jquery.jplayer.min.js"></script>
+    <script src="js/jplayerInit.js"></script>
+</body>
+
+</html>
