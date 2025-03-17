@@ -115,6 +115,14 @@
             <p class="text-center mt-3" id="productDescription" style="font-weight: 600;"></p>
             <form>
                 <div class="mb-3">
+                    <label for="text1" class="form-label" style="color: rgb(255, 150, 22); font-weight: 800;">Text 1 or Date 1 (Optional)</label>
+                    <input type="text" class="form-control" id="text1" placeholder="Enter text or date">
+                </div>
+                <div class="mb-3">
+                    <label for="imageUpload" class="form-label" style="color: rgb(255, 150, 22); font-weight: 800;">Upload Custom Picture (Optional)</label>
+                    <input type="file" class="form-control" id="imageUpload" accept="image/*">
+                </div>
+                <div class="mb-3">
                     <label for="songName" class="form-label" style="color: rgb(255, 150, 22); font-weight: 800;">Song Name</label>
                     <input type="text" class="form-control" id="songName" placeholder="Enter song name" required>
                 </div>
@@ -123,16 +131,8 @@
                     <input type="text" class="form-control" id="artistName" placeholder="Enter artist name" required>
                 </div>
                 <div class="mb-3">
-                    <label for="quantity" class="form-label" style="color: rgb(255, 150, 22); font-weight: 800;">Quantity</label>
-                    <div class="input-group" style="width: 250px;">
-                        <button type="button" class="btn btn-outline-secondary" id="decrement">-</button>
-                        <input type="text" class="form-control text-center" id="quantity" value="1">
-                        <button type="button" class="btn btn-outline-secondary" id="increment">+</button>
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label for="imageUpload" class="form-label" style="color: rgb(255, 150, 22); font-weight: 800;">Upload Custom Picture (Optional)</label>
-                    <input type="file" class="form-control" id="imageUpload" accept="image/*">
+                    <label for="text2" class="form-label" style="color: rgb(255, 150, 22); font-weight: 800;">Song Link (YouTube)</label>
+                    <input type="text" class="form-control" id="text2" placeholder="Enter text or date">
                 </div>
                 <div class="mb-3">
                     <label class="form-label" style="color: rgb(255, 150, 22); font-weight: 800;">Text Color</label>
@@ -148,12 +148,12 @@
                     </div>
                 </div>
                 <div class="mb-3">
-                    <label for="text1" class="form-label" style="color: rgb(255, 150, 22); font-weight: 800;">Text 1 or Date 1 (Optional)</label>
-                    <input type="text" class="form-control" id="text1" placeholder="Enter text or date">
-                </div>
-                <div class="mb-3">
-                    <label for="text2" class="form-label" style="color: rgb(255, 150, 22); font-weight: 800;">Text 2 or Date 2 (Optional)</label>
-                    <input type="text" class="form-control" id="text2" placeholder="Enter text or date">
+                    <label for="quantity" class="form-label" style="color: rgb(255, 150, 22); font-weight: 800;">Quantity</label>
+                    <div class="input-group" style="width: 250px;">
+                        <button type="button" class="btn btn-outline-secondary" id="decrement">-</button>
+                        <input type="text" class="form-control text-center" id="quantity" value="1">
+                        <button type="button" class="btn btn-outline-secondary" id="increment">+</button>
+                    </div>
                 </div>
                 <!-- Text on Wood Base (Only for P2) -->
                 <div class="mb-3 d-none" id="woodBaseSection">
@@ -173,7 +173,7 @@
                 <select class="form-select" id="deliveryOption" required>
                     <option value="" disabled selected>Select delivery option</option>
                     <option value="pickup">Pickup Point (La Goulette)</option>
-                    <option value="home_delivery">Home Delivery (+7DT)</option>
+                    <option value="home_delivery">Home Delivery (+8 DT)</option>
                 </select>
             </div>
             <form>
@@ -307,7 +307,7 @@
             function displayGuide() {
                 Swal.fire({
                     confirmButtonText: 'Got it!',
-                    imageUrl: 'img/explain.png', // Path to your local image
+                    imageUrl: 'img/explain.svg', // Path to your local image
                 });
             }
 
@@ -334,21 +334,21 @@
                         image: 'img/events/event-1.jpg',
                         thumbnail1: 'img/th1.png', // Thumbnail 1 for P1
                         thumbnail2: 'img/event-1.png', // Thumbnail 2 for P1
-                        description: 'Material : High-quality 3mm thick plexiglass <br> Size : A5 dimensions (14.8 x 21 cm) <br> Design : Personalized with Spotify code <br>Text : Text available in white or black'
+                        description: 'Material : High-quality 3mm thick plexiglass <br> Size : A5 dimensions (15 x 23 cm) <br> Design : Personalized with Spotify code <br>Text : Text available in white or black'
                     },
                     '2': {
                         title: 'A5 Plexiglass with Wooden Base',
                         image: 'img/events/event-2.jpg',
                         thumbnail1: 'img/socle.jpg', // Thumbnail 1 for P2
                         thumbnail2: 'img/thumbnail2.jpg', // Thumbnail 2 for P2
-                        description: 'Material : High-quality 3mm thick plexiglass <br> Size : A5 dimensions (14.8 x 21 cm) <br> Base : Solid wooden base that can be engraved with a personal message or design <br>Text : Text available in white or black'
+                        description: 'Material : High-quality 3mm thick plexiglass <br> Size : A5 dimensions (15 x 23 cm) <br> Base : Solid wooden base that can be engraved with a personal message or design <br>Text : Text available in white or black'
                     },
                     '3': {
                         title: 'A5 Plexiglass with Metal Spacers',
                         image: 'img/events/event-3.jpg',
                         thumbnail1: 'img/metalspacer.jpg', // Thumbnail 1 for P3
                         thumbnail2: 'img/thumbnail3.jpg', // Thumbnail 2 for P3
-                        description: 'Material : High-quality 3mm thick plexiglass <br> Size : A5 dimensions (14.8 x 21 cm) <br> Mounting : Includes metal spacers to attach on the wall <br>Text : Text available in white or black'
+                        description: 'Material : High-quality 3mm thick plexiglass <br> Size : A5 dimensions (15 x 23 cm) <br> Mounting : Includes metal spacers to attach on the wall <br>Text : Text available in white or black'
                     }
                 };
 
@@ -587,6 +587,11 @@
                     </div>
                 </div>
             </div>
+             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+			<div class="footer__copyright__text">
+				<p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved</p>
+			</div>
+			<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
         </div>
     </footer>
     <!-- Footer Section End -->
